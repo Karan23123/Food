@@ -1,29 +1,9 @@
 .sidebar_listItems {
-    padding: 20px 10px 0px;
-
-    .login__detailsSec {
-        .innerLogin__detailsSec {
-            .user__name {
-                p {
-                    max-width: 70px;
-                }
-            }
-
-            .user__logout {
-                a {
-                    display: block;
-                    width: 70px;
-                }
-            }
-        }
-    }
-
     a {
         text-decoration: none;
 
         .sidebar_listItemsInner {
             gap: 20px;
-            justify-content: center;
 
             img {
                 max-width: 20px;
@@ -36,7 +16,6 @@
                 font-family: Noto Sans;
                 font-weight: 400;
                 font-size: 18px;
-                display: none;
             }
         }
     }

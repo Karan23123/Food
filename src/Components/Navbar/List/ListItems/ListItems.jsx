@@ -5,24 +5,6 @@ import images from '../../../../assets/images';
 function ListItems() {
     return (
         <>
-            <li className="sidebar_listItems text-center">
-                <div className="login__detailsSec">
-                    <div className="innerLogin__detailsSec">
-                        <div className="user__img">
-                            <img src={images.users} alt="users" loading='lazy' className='img-fluid' />
-                        </div>
-                        <div className="user__name">
-                            <p>Sanjeev Kumar</p>
-                        </div>
-                        <div className="user__logout">
-                            <a href="">
-                                Logout
-                                <img src={images.logout} alt="logout" loading='lazy' className='img-fluid' />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </li>
             <li className="sidebar_listItems">
                 <a href="">
                     <div className="sidebar_listItemsInner d-flex">

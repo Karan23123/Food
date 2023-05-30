@@ -1,9 +1,47 @@
+$bgColor: red;
+
+
 .sidebar_pannel {
     background: #FFE0BA;
     border-radius: 0px 10px 10px 0px;
     height: 100%;
+    transition: all 0.3s ease-in-out;
+    color: $bgColor;
+
+    &:hover {
+        .sidebar_listItemsInner p {
+            display: block;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .sidebar_listItemsInner p {
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
 
     .sideBar__list {
+        padding: 28px;
         gap: 30px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f100;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #C53705;
+            border-radius: 5px;
+        }
+    }
+
+    .listStyle {
+        height: calc(100% - 31%);
+        overflow: hidden;
     }
 }
