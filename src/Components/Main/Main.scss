@@ -1,4 +1,14 @@
 .mainSection {
-    height: 100%;
     margin-left: 90px;
+}
+
+.mainInner {
+    background: #FFE0BA;
+    border-radius: 10px;
+
+    .mainIneerSection {
+        border-radius: 10px;
+        display: inline-block;
+        width: calc(100% - 32px);
+    }
 }

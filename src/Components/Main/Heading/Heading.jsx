@@ -4,7 +4,7 @@ import "./Heading.scss";
 function Heading() {
     return (
         <div className='mainHeader mt-3 mx-3'>
-            Heading
+            Add Product
         </div>
     )
 }

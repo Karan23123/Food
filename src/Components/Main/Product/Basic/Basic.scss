@@ -1,0 +1,39 @@
+@import "../../../../assets/css/untilities.scss";
+
+.addProduct__navtab {
+    a {
+
+        padding: 10px 20px;
+        text-decoration: none;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $black;
+        background-color: $lightPrimaryColor;
+
+        &:not(:last-child) {
+            border-right: 1px solid #FFFFFF;
+        }
+
+        &.active {
+            background: $primaryColor;
+            color: $white;
+        }
+    }
+
+    .form-switch {
+        padding-left: 0em !important;
+    }
+
+    .form-check .form-check-input {
+        float: none;
+    }
+
+    .form-switch .form-check-input {
+        margin-left: 0;
+        display: block;
+    }
+
+}

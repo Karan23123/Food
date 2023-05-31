@@ -1,27 +1,58 @@
-$bgColor: red;
-
-
 .sidebar_pannel {
     background: #FFE0BA;
     border-radius: 0px 10px 10px 0px;
     height: 100%;
     transition: all 0.3s ease-in-out;
-    color: $bgColor;
-
-    &:hover {
-        .sidebar_listItemsInner p {
-            display: block;
-            transition: all 0.3s ease-in-out;
-        }
-    }
 
     .sidebar_listItemsInner p {
+        opacity: 0;
         display: none;
         transition: all 0.3s ease-in-out;
     }
 
+    &:hover {
+        .sidebar_listItemsInner p {
+            opacity: 1;
+            display: block;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .login__detailsSec {
+            padding: 28px 10px;
+
+            .user__name {
+                p {
+                    width: 100%;
+                }
+            }
+
+            .user__logout {
+                a {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .login__detailsSec {
+        padding: 28px 10px;
+
+        .user__name {
+            p {
+                width: 70px;
+            }
+        }
+
+        .user__logout {
+            a {
+                width: 70px;
+                display: block;
+            }
+        }
+    }
+
     .sideBar__list {
-        padding: 28px;
         gap: 30px;
         overflow: auto;
 
@@ -43,5 +74,11 @@ $bgColor: red;
     .listStyle {
         height: calc(100% - 31%);
         overflow: hidden;
+
+        .sideBar__list {
+            .sidebar_listItems {
+                padding: 0px 30px;
+            }
+        }
     }
 }

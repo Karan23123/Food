@@ -7,7 +7,7 @@ function ListItems() {
         <>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.orders} alt="Orders" loading='lazy' className='img-fluid' />
                         <p>Orders</p>
                     </div>
@@ -15,7 +15,7 @@ function ListItems() {
             </li>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.productManagment} alt="Product Management" loading='lazy' className='img-fluid' />
                         <p>Product Management</p>
                     </div>
@@ -23,7 +23,7 @@ function ListItems() {
             </li>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.promotionManagment} alt="Promotion Management" loading='lazy' className='img-fluid' />
                         <p>Promotion Management</p>
                     </div>
@@ -31,7 +31,7 @@ function ListItems() {
             </li>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.kitchen} alt="Kitchen Screen" loading='lazy' className='img-fluid' />
                         <p>Kitchen Screen</p>
                     </div>
@@ -39,7 +39,7 @@ function ListItems() {
             </li>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.locality} alt="Locality" loading='lazy' className='img-fluid' />
                         <p>Locality</p>
                     </div>
@@ -47,7 +47,7 @@ function ListItems() {
             </li>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.productManagment} alt="Stock Management" loading='lazy' className='img-fluid' />
                         <p>Stock Management</p>
                     </div>
@@ -55,7 +55,7 @@ function ListItems() {
             </li>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.user} alt="User" loading='lazy' className='img-fluid' />
                         <p>Users</p>
                     </div>
@@ -63,7 +63,7 @@ function ListItems() {
             </li>
             <li className="sidebar_listItems">
                 <a href="">
-                    <div className="sidebar_listItemsInner d-flex">
+                    <div className="sidebar_listItemsInner d-flex align-items-center">
                         <img src={images.report} alt="Report" loading='lazy' className='img-fluid' />
                         <p>Reports</p>
                     </div>
