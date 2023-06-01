@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import "./Categories.scss";
 
 function Categories() {
 
@@ -11,17 +12,19 @@ function Categories() {
             setshowSubParentCategory(false);
         }
     }
+
     return (
         <>
-            <div className="addProduct__basicTab">
+            <div className="addProduct__categoryTab">
                 <form>
-                    <div className="addProduct__basicForm d-flex">
+                    <div className="addProduct__categoryTab d-flex">
                         <div className="addProduct__selectParentCategory">
                             <label htmlFor="parentCategory" className="form-label inputForm__label" >
                                 Select Parent Category:
                                 <span className="formRequired">*</span>
                             </label>
-                            <select className="form-select inputForm__inputField" id="parentCategory" onChange={handleparentCategory}>
+                            <select className="form-select inputForm__inputField" id="parentCategory"
+                                onChange={handleparentCategory}>
                                 <option defaultValue>Select Class</option>
                                 <option value="1">Pizza</option>
                                 <option value="2">Burger</option>
@@ -34,9 +37,22 @@ function Categories() {
                             </select>
                         </div>
                     </div>
-                    {showSubParentCategory && (<div className="subcatgeory">Subcategory</div>)}
-                </form>
-            </div>
+                    {showSubParentCategory &&
+                        (
+                            <div className="addProduct__subcatgeoryTab py-3 d-flex">
+
+                                <div className="addProduct__subcategoryCheckboxes d-flex align-items-center">
+                                    <input type="checkbox" className='form-check-input' id='Non veg' />
+                                    <label htmlFor="Non veg" className='inputFormCheckbox__label'>Non veg</label>
+                                </div>
+                                <div className="addProduct__subcategoryCheckboxes d-flex align-items-center">
+                                    <input type="checkbox" className='form-check-input' id='veg' />
+                                    <label htmlFor="veg" className='inputFormCheckbox__label'>Veg</label>
+                                </div>
+                            </div>
+                        )}
+                </form >
+            </div >
         </>
     )
 }

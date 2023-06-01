@@ -4,7 +4,7 @@ import "./Buttons.scss";
 function Buttons() {
     return (
         <>
-            <div className="addproduct__submitButtons d-flex pt-4 pb-2">
+            <div className="addproduct__submitButtons d-flex pt-5 pb-2">
                 <button type="submit" className="saveButton">
                     Save
                 </button>

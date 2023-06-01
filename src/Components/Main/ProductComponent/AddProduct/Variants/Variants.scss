@@ -1,0 +1,26 @@
+.table>:not(caption)>*>* {
+    border: none;
+    border-bottom-width: 0px;
+}
+
+thead {
+    tr {
+        th {
+            text-align: center;
+        }
+    }
+}
+
+tbody {
+    tr {
+        &:nth-child(2n+2) {
+            background-color: #EDAD83;
+            ;
+        }
+
+        th, td {
+            text-align: center;
+        }
+    }
+
+}

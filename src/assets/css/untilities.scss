@@ -5,54 +5,7 @@ $lightPrimaryColor: #FDC886;
 $white: #FFFFFF;
 $black: #000000;
 
-
-
-
 //Styles For All Inputs
-@mixin FormCss {
-    .form-switch .form-check-input {
-        margin-left: 0;
-        display: block;
-        border: none;
-        width: 73px;
-        height: 30px;
-        float: none;
-        background-image: url("../../../../assets/svg/circleRed.svg");
-
-        &:checked {
-            background-position: right center;
-            background-color: white;
-            background-image: url("../../../../assets/svg/circleGreen.svg");
-        }
-
-        &:active {
-            filter: none;
-        }
-
-        &:focus {
-            border-color: transparent;
-            box-shadow: none;
-        }
-    }
-
-    .form-control,
-    .form-select {
-        &:focus {
-            border-color: transparent;
-            box-shadow: 0 0 0 2px rgb(169 63 30 / 29%);
-        }
-    }
-
-    .form-switch {
-        padding-left: 0em !important;
-    }
-
-    .inputForm__inputField {
-        width: 191px;
-        height: 36px;
-    }
-}
-
 @mixin Noto {
     font-family: 'Noto Sans';
 }
@@ -99,4 +52,13 @@ $black: #000000;
     line-height: 25px;
     color: $black;
     margin-bottom: 10px;
+}
+
+.inputFormCheckbox__label {
+    @include Noto();
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: $black;
 }

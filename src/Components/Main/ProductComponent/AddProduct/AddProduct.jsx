@@ -1,9 +1,10 @@
 import React from 'react';
 import "./AddProduct.scss"
 import { NavLink, Outlet } from 'react-router-dom';
-import Buttons from './Buttons/Buttons';
+import Buttons from '../Buttons/Buttons';
 
-function AddTopping() {
+
+function AddProduct() {
     return (
         <>
             <div className='addProduct__navtab d-flex'>
@@ -20,4 +21,4 @@ function AddTopping() {
     )
 }
 
-export default AddTopping
+export default AddProduct
