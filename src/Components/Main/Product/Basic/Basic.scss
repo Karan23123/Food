@@ -5,7 +5,7 @@
 
         padding: 10px 20px;
         text-decoration: none;
-        font-family: 'Noto Sans';
+        @include Noto();
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -14,7 +14,7 @@
         background-color: $lightPrimaryColor;
 
         &:not(:last-child) {
-            border-right: 1px solid #FFFFFF;
+            border-right: 1px solid $white;
         }
 
         &.active {
@@ -23,17 +23,14 @@
         }
     }
 
-    .form-switch {
-        padding-left: 0em !important;
-    }
 
-    .form-check .form-check-input {
-        float: none;
-    }
+}
 
-    .form-switch .form-check-input {
-        margin-left: 0;
-        display: block;
-    }
+.navTabs__content {
 
+    @include FormCss();
+
+    .addProduct__basicForm {
+        gap: 80px;
+    }
 }

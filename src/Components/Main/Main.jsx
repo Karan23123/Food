@@ -16,6 +16,7 @@ function Main() {
                 <div className="mainIneerSection m-3">
                     <Routes>
                         <Route path='add-product' element={<AddProduct />}>
+                            <Route index element={<Basic/>}/>
                             <Route path='basic' element={<Basic />} />
                             <Route path='categories' element={<Categories />} />
                             <Route path='description' element={<Description />} />
