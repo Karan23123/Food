@@ -10,6 +10,8 @@ import Description from './ProductComponent/AddProduct/Description/Description';
 import Variants from './ProductComponent/AddProduct/Variants/Variants';
 import AddProduct from './ProductComponent/AddProduct/AddProduct';
 import Product from './ProductComponent/Product/Product';
+import Toppings from './ToppingComponent/Toppings/Toppings';
+import AddTopping from './ToppingComponent/AddTopping/AddTopping';
 
 function Main() {
     return (
@@ -26,6 +28,8 @@ function Main() {
                             <Route path='variants' element={<Variants />} />
                         </Route>
                         <Route path='product' element={<Product />} />
+                        <Route path="add-topping" element={<AddTopping />} />
+                        <Route path="toppings" element={<Toppings />} />
                     </Routes>
                 </div>
             </div>

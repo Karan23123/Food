@@ -33,7 +33,7 @@ function ListItems() {
                                     <Link to="categories">Categories</Link>
                                 </li>
                                 <li className="sidebarInner__SUblist">
-                                    <Link to="toppings ">Toppings</Link>
+                                    <Link to="toppings">Toppings</Link>
                                 </li>
                                 <li className="sidebarInner__SUblist">
                                     <Link to="product">Product</Link>
