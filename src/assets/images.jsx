@@ -10,7 +10,8 @@ import promotionManagment from "./svg/promotion-management.svg";
 import report from "./svg/report.svg";
 import stockManagment from "./svg/stock-managment.svg";
 import user from "./svg/users.svg";
-
+import deleteIcon from "./svg/Delete.svg";
+import editIcon from "./svg/Edit.svg";
 
 
 export default {
@@ -25,5 +26,7 @@ export default {
     promotionManagment,
     report,
     stockManagment,
-    user
+    user,
+    deleteIcon,
+    editIcon
 }

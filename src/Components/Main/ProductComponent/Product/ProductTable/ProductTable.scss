@@ -1,23 +1,10 @@
 @import "../../../../../assets/css/untilities.scss";
 
-.table>:not(caption)>*>* {
-    border: none;
-    border-bottom-width: 0px;
-}
-
-.addProduct__variants {
-
-    table {
-        @include Noto();
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-
+.productSection__table {
+    .table {
         thead {
             tr {
                 th {
-                    text-align: center;
                     background: $primaryColor !important;
                     color: $white;
                     @include Noto();
@@ -37,13 +24,20 @@
             tr {
                 &:nth-child(2n+2) {
                     background-color: #EDAD83;
-                    padding: 22px 16px !important;
                 }
 
-                th,
+
                 td {
-                    text-align: center;
-                    padding: 22px 16px !important;
+                    @include Noto();
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $black;
+
+                    .productAction__buttons {
+                        gap: 10px;
+                    }
                 }
             }
 
